@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # API — Mujeres Celebran la Vida
 
 Esta versión usa únicamente las tablas del esquema definitivo PostgreSQL `mujeres_celebran_la_vida`. No ejecuta scripts de creación o modificación de tablas (`spring.sql.init.mode=never`) y Hibernate/JPA fue retirado: las consultas se realizan con JDBC contra las tablas existentes.
@@ -37,3 +38,6 @@ También existe `POST /api/auth/login` para validar credenciales contra `usuario
 Las operaciones compuestas de donación, préstamo, entrega, reserva y devolución se gestionan con rutas de negocio transaccionales que actualizan los detalles, el stock y el historial. Las reservas pueden cancelarse o completarse como una entrega definitiva. El stock usa una fila por artículo y estado, de acuerdo con la restricción única del esquema. La API al iniciar intenta alinear las secuencias PostgreSQL con los IDs ya existentes para evitar colisiones después de insertar IDs manuales.
 
 El tipo de tercero representa `PERSONA`, `FAMILIA`, `INSTITUCION` u `ORGANIZACION`; cualquiera de estos terceros puede actuar como donante o destinatario. La tabla actual no almacena email de terceros. Antes de usarla con datos reales, realizá una prueba de aceptación completa en una copia de la base de datos.
+=======
+# APIMCLV
+>>>>>>> a26b97c4c4fda263b7c00b357f94d5fd27bb1af0
